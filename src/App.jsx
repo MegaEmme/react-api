@@ -44,11 +44,13 @@ function App() {
       <div className="buttons">
         <button onClick={fetchActors}>Attori</button>
         <button onClick={fetchActress}>Attrici</button>
+        <hr />
         <input type="text"
           placeholder='Cerca attore'
           value={filter}
           onChange={e => setFilter(e.target.value)}
         />
+        <hr />
       </div>
       <Card Actor={actor} />
     </>
