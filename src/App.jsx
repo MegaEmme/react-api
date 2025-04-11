@@ -3,7 +3,8 @@ import axios from 'axios';
 import Card from './components/Card';
 function App() {
   const [actor, setActor] = useState([]);
-  const [filter, setFilter] = useState('')
+  const [actress, setActress] = useState([]);
+  const [filter, setFilter] = useState('');
   const endpointActresses = "https://www.freetestapi.com/api/v1/actresses";
   const endpointActors = "https://www.freetestapi.com/api/v1/actors";
   const endpointFilter = `https://www.freetestapi.com/api/v1/actresses?search=${filter}`
@@ -11,7 +12,7 @@ function App() {
   function fetchActress() {
     axios.get(endpointActresses)
       .then(res => {
-        setActor(res.data)
+        setActress(res.data)
       })
   };
   function fetchActors() {
@@ -23,7 +24,7 @@ function App() {
   function fetchFilter() {
     axios.get(endpointFilter)
       .then(res => {
-        setActor(res.data)
+        setActress(res.data)
       })
   };
   function fetchFilterTwo() {
@@ -52,7 +53,7 @@ function App() {
         />
         <hr />
       </div>
-      <Card Actor={actor} />
+      <Card Actor={actor} Actress={actress} />
     </>
   )
 };
