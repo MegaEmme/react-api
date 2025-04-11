@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    font-size: 4rem;
+    color: lightseagreen;
+}
+
+h2, h3, h4{
+    text-align: center;
+}
+
+.card{
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 0 3rem 2rem 3rem;
+    border-radius: 2rem;
+    background-color: lightcoral;
+    position: relative;
+}
+
+.card-image{
+    width: 8rem;
+    position: absolute;   
+    top: 1rem;
+    left: 3rem; 
+    border-radius: 2rem;
+}

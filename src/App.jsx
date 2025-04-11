@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Card from './components/Card';
 
 function App() {
   const [actor, setActor] = useState([])
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <h1>Lista Attori/Attrici</h1>
+      <Card Actor={actor} />
     </>
   )
 }
