@@ -23,7 +23,7 @@ function Card(props) {
                     <h4>Nazionalità: {element.nationality}</h4>
                     <h4>Premi Vinti: {element.awards}</h4>
                     <p>Bio: {element.biography}</p>
-                    <img className="card-image" src={element.image} alt="actor-image" />
+                    <img className="card-image" src={element.image} alt="actress-image" />
                 </div>
             )}
         </>

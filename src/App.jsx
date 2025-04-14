@@ -8,7 +8,7 @@ function App() {
   // const endpointActresses = "https://www.freetestapi.com/api/v1/actresses";
   // const endpointActors = "https://www.freetestapi.com/api/v1/actors";
   const endpointFilter = `https://www.freetestapi.com/api/v1/actresses?search=${filter}`
-  const endpointFilterTwo = `https://www.freetestapi.com/api/v1/actors?search=${filter}`
+  const endpointFilterTwo = `https://www.freetstapi.com/api/v1/actors?search=${filter}`
   // function fetchActress() {
   //   axios.get(endpointActresses)
   //     .then(res => {
@@ -26,15 +26,17 @@ function App() {
       .then(res => {
         setActress(res.data)
       })
+      .catch(err => console.log(err))
   };
   function fetchFilterTwo() {
     axios.get(endpointFilterTwo)
       .then(res => {
         setActor(res.data)
       })
+      .catch(err => console.log(err))
   };
 
-  console.log(actor);
+  // console.log(actor);
   // useEffect(fetchActress, [filter]);
   // useEffect(fetchActors, [filter]);
   // useEffect(fetchFilter, [filter])
